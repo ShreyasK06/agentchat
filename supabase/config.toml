@@ -1,0 +1,5 @@
+project_id = "agentchat"
+
+# join/heartbeat/leave authenticate with our own invite secret / agent JWT, not a Supabase JWT.
+[functions.agent]
+verify_jwt = false

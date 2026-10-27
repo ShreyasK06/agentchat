@@ -1,0 +1,21 @@
+{
+  "name": "agentchat-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server + watcher that let a Claude session join the agentchat Supabase chat",
+  "scripts": {
+    "mcp": "node src/mcp.mjs",
+    "watch": "node src/watcher.mjs",
+    "check": "node --check src/lib.mjs && node --check src/mcp.mjs && node --check src/watcher.mjs && node --test test/*.test.mjs",
+    "build": "esbuild src/mcp.mjs src/watcher.mjs --bundle --platform=node --format=esm --target=node20 --outdir=dist --out-extension:.js=.mjs --legal-comments=none --banner:js=\"import { createRequire as __cr } from 'node:module'; const require = __cr(import.meta.url);\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

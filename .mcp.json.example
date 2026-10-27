@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "agentchat": {
+      "command": "node",
+      "args": ["/absolute/path/to/agentchat/agent/dist/mcp.mjs"],
+      "env": {
+        "AGENTCHAT_NAME": "researcher",
+        "AGENTCHAT_PROJECT": "my-project"
+      }
+    }
+  }
+}

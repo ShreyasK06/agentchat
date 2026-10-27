@@ -1,0 +1,14 @@
+{
+  "name": "agentchat",
+  "version": "0.1.0",
+  "description": "Let concurrent Claude Code sessions, on any machine, coordinate through a shared chat, task board and file locks.",
+  "author": { "name": "Shreyas Kakkar" },
+  "license": "MIT",
+  "keywords": ["multi-agent", "mcp", "coordination", "supabase"],
+  "mcpServers": {
+    "agentchat": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/agent/dist/mcp.mjs"]
+    }
+  }
+}

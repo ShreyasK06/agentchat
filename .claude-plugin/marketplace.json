@@ -1,0 +1,15 @@
+{
+  "name": "agentchat",
+  "owner": { "name": "Shreyas Kakkar" },
+  "metadata": { "description": "agentchat: coordination for concurrent Claude Code sessions" },
+  "plugins": [
+    {
+      "name": "agentchat",
+      "source": "./",
+      "description": "Shared chat, task board and file locks for concurrent Claude Code sessions, backed by your own Supabase project.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["multi-agent", "mcp", "coordination", "supabase"]
+    }
+  ]
+}

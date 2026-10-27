@@ -1,0 +1,18 @@
+node_modules/
+dist/
+# the plugin ships this prebuilt bundle so it needs no npm install on first run
+!agent/dist/
+.env
+.env.*
+!.env.example
+supabase/.temp/
+supabase/.branches/
+
+# local-only tooling and machine config (never published)
+.claude-flow/
+.claude/
+.swarm/
+.mcp.json
+*.log
+.DS_Store
+Thumbs.db
